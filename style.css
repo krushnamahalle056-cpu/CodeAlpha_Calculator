@@ -113,3 +113,17 @@ button.equals:hover {
     font-size: 12px;
 }
 
+@media (max-width: 400px) {
+    .calculator {
+        padding: 16px;
+    }
+
+    button {
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .display {
+        font-size: 28px;
+    }
+}
