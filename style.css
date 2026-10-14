@@ -84,3 +84,15 @@ button.function {
     background: #64748b;
 }
 
+button.function:hover {
+    background: #7c8da3;
+}
+
+button.operator {
+    background: #f59e0b;
+    color: #111827;
+}
+
+button.operator:hover {
+    background: #fbbf24;
+}
