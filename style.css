@@ -96,3 +96,13 @@ button.operator {
 button.operator:hover {
     background: #fbbf24;
 }
+
+button.equals {
+    background: #22c55e;
+    color: #052e16;
+}
+
+button.equals:hover {
+    background: #4ade80;
+}
+
