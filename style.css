@@ -54,3 +54,21 @@ body {
     font-weight: bold;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    min-width: 0;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background: #334155;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
