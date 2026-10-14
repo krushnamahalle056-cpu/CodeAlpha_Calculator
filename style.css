@@ -106,3 +106,10 @@ button.equals:hover {
     background: #4ade80;
 }
 
+.hint {
+    margin-top: 18px;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 12px;
+}
+
