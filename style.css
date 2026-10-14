@@ -72,3 +72,15 @@ button {
     transition: background 0.2s, transform 0.1s;
 }
 
+button:hover {
+    background: #475569;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.function {
+    background: #64748b;
+}
+
