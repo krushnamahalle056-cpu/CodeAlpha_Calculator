@@ -10,3 +10,17 @@ let shouldResetDisplay = false;
 function updateDisplay() {
     display.value = currentValue;
 }
+
+// Enter a number
+function enterNumber(number) {
+    if (currentValue === "Error" || shouldResetDisplay) {
+        currentValue = number;
+        shouldResetDisplay = false;
+    } else if (currentValue === "0") {
+        currentValue = number;
+    } else if (currentValue.length < 15) {
+        currentValue += number;
+    }
+
+    updateDisplay();
+}
