@@ -84,3 +84,27 @@ function chooseOperator(nextOperator) {
     operator = nextOperator;
     shouldResetDisplay = true;
 }
+
+// Perform calculation
+function performCalculation() {
+    if (operator === null || previousValue === null) {
+        return;
+    }
+
+    const a = previousValue;
+    const b = Number(currentValue);
+    const result = calculate(a, b, operator);
+
+    if (result === null) {
+        currentValue = "Error";
+    } else {
+        currentValue = formatResult(result);
+    }
+
+    previousValue = null;
+    operator = null;
+    shouldResetDisplay = true;
+
+    updateDisplay();
+}
+
