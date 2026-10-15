@@ -24,3 +24,17 @@ function enterNumber(number) {
 
     updateDisplay();
 }
+
+// Add decimal point
+function enterDecimal() {
+    if (currentValue === "Error" || shouldResetDisplay) {
+        currentValue = "0.";
+        shouldResetDisplay = false;
+    } else if (!currentValue.includes(".")) {
+        currentValue += ".";
+    }
+
+    updateDisplay();
+}
+
+
