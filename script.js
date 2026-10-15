@@ -56,3 +56,13 @@ function calculate(a, b, op) {
             return b;
     }
 }
+
+// Format the result
+function formatResult(number) {
+    if (!Number.isFinite(number)) {
+        return "Error";
+    }
+
+    return String(Number(number.toPrecision(12)));
+}
+
