@@ -66,3 +66,21 @@ function formatResult(number) {
     return String(Number(number.toPrecision(12)));
 }
 
+// Choose an operator
+function chooseOperator(nextOperator) {
+    if (currentValue === "Error") {
+        return;
+    }
+
+    if (operator && !shouldResetDisplay) {
+        performCalculation();
+
+        if (currentValue === "Error") {
+            return;
+        }
+    }
+
+    previousValue = Number(currentValue);
+    operator = nextOperator;
+    shouldResetDisplay = true;
+}
