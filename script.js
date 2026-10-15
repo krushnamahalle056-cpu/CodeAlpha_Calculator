@@ -37,4 +37,22 @@ function enterDecimal() {
     updateDisplay();
 }
 
+// Calculate the result
+function calculate(a, b, op) {
+    switch (op) {
+        case "+":
+            return a + b;
 
+        case "-":
+            return a - b;
+
+        case "*":
+            return a * b;
+
+        case "/":
+            return b === 0 ? null : a / b;
+
+        default:
+            return b;
+    }
+}
