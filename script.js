@@ -160,3 +160,48 @@ function changeSign() {
 
     updateDisplay();
 }
+
+// Handle button clicks
+buttons.addEventListener("click", function (event) {
+    const button = event.target.closest("button");
+
+    if (!button) {
+        return;
+    }
+
+    if (button.dataset.number !== undefined) {
+        enterNumber(button.dataset.number);
+        return;
+    }
+
+    if (button.dataset.operator) {
+        chooseOperator(button.dataset.operator);
+        return;
+    }
+
+    switch (button.dataset.action) {
+        case "clear":
+            clearCalculator();
+            break;
+
+        case "delete":
+            deleteDigit();
+            break;
+
+        case "decimal":
+            enterDecimal();
+            break;
+
+        case "percent":
+            calculatePercentage();
+            break;
+
+        case "sign":
+            changeSign();
+            break;
+
+        case "equals":
+            performCalculation();
+            break;
+    }
+});
