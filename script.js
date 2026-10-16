@@ -205,3 +205,25 @@ buttons.addEventListener("click", function (event) {
             break;
     }
 });
+
+// Keyboard support
+document.addEventListener("keydown", function (event) {
+    const key = event.key;
+
+    if (/^[0-9]$/.test(key)) {
+        enterNumber(key);
+    } else if (key === ".") {
+        enterDecimal();
+    } else if (["+", "-", "*", "/"].includes(key)) {
+        chooseOperator(key);
+    } else if (key === "Enter" || key === "=") {
+        event.preventDefault();
+        performCalculation();
+    } else if (key === "Backspace") {
+        deleteDigit();
+    } else if (key === "Escape") {
+        clearCalculator();
+    } else if (key === "%") {
+        calculatePercentage();
+    }
+});
