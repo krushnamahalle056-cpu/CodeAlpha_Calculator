@@ -147,3 +147,16 @@ function calculatePercentage() {
 
     updateDisplay();
 }
+
+// Change positive/negative sign
+function changeSign() {
+    if (currentValue === "Error" || Number(currentValue) === 0) {
+        return;
+    }
+
+    currentValue = currentValue.startsWith("-")
+        ? currentValue.slice(1)
+        : "-" + currentValue;
+
+    updateDisplay();
+}
