@@ -117,3 +117,21 @@ function clearCalculator() {
 
     updateDisplay();
 }
+
+// Delete last digit
+function deleteDigit() {
+    if (currentValue === "Error" || shouldResetDisplay) {
+        currentValue = "0";
+        shouldResetDisplay = false;
+    } else if (currentValue.length > 1) {
+        currentValue = currentValue.slice(0, -1);
+
+        if (currentValue === "-") {
+            currentValue = "0";
+        }
+    } else {
+        currentValue = "0";
+    }
+
+    updateDisplay();
+}
