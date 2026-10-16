@@ -108,3 +108,12 @@ function performCalculation() {
     updateDisplay();
 }
 
+// Clear everything
+function clearCalculator() {
+    currentValue = "0";
+    previousValue = null;
+    operator = null;
+    shouldResetDisplay = false;
+
+    updateDisplay();
+}
