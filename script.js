@@ -135,3 +135,15 @@ function deleteDigit() {
 
     updateDisplay();
 }
+
+// Convert to percentage
+function calculatePercentage() {
+    if (currentValue === "Error") {
+        return;
+    }
+
+    currentValue = formatResult(Number(currentValue) / 100);
+    shouldResetDisplay = true;
+
+    updateDisplay();
+}
