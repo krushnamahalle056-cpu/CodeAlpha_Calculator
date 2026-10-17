@@ -27,4 +27,10 @@ CodeAlpha_Calculator/
 ├── script.js
 └── README.md
 
+## How to Run
+
+1. Open the project folder in VS Code.
+2. Open `index.html` using Live Server.
+3. Click the buttons to perform calculations.
+4. You can also use your keyboard to enter numbers and operators.
 
