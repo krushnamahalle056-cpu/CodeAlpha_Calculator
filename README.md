@@ -34,3 +34,7 @@ CodeAlpha_Calculator/
 3. Click the buttons to perform calculations.
 4. You can also use your keyboard to enter numbers and operators.
 
+## What I Learned
+
+While building this project, I practiced JavaScript functions, event handling, conditional statements, arithmetic operations, and responsive CSS design.
+
