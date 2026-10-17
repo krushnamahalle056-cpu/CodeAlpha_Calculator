@@ -14,3 +14,9 @@ The calculator performs basic mathematical operations through an easy-to-use int
 - Responsive design for mobile and desktop
 - Error handling for division by zero
 
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
