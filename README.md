@@ -38,3 +38,8 @@ CodeAlpha_Calculator/
 
 While building this project, I practiced JavaScript functions, event handling, conditional statements, arithmetic operations, and responsive CSS design.
 
+## Internship
+
+**Organization:** CodeAlpha  
+**Domain:** Frontend Development  
+**Project:** Calculator
