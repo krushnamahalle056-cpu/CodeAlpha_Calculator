@@ -20,3 +20,11 @@ The calculator performs basic mathematical operations through an easy-to-use int
 - CSS3
 - JavaScript
 
+## Project Structure
+CodeAlpha_Calculator/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+
