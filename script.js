@@ -227,3 +227,9 @@ document.addEventListener("keydown", function (event) {
         calculatePercentage();
     }
 });
+
+
+function percentage() {
+    const display = document.getElementById("display");
+    display.value = Number(display.value) / 100;
+}
