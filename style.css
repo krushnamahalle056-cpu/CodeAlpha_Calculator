@@ -127,3 +127,10 @@ button.equals:hover {
         font-size: 28px;
     }
 }
+
+/* Extra Mathematical Buttons */
+button {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
