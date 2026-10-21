@@ -253,3 +253,14 @@ function square() {
 
     display.value = num * num;
 }
+
+
+function power() {
+    const display = document.getElementById("display");
+    const base = Number(display.value);
+    const exponent = prompt("Enter the power:");
+
+    if (exponent !== null && exponent.trim() !== "") {
+        display.value = Math.pow(base, Number(exponent));
+    }
+}
