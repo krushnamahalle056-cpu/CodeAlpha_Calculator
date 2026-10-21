@@ -233,3 +233,15 @@ function percentage() {
     const display = document.getElementById("display");
     display.value = Number(display.value) / 100;
 }
+
+function squareRoot() {
+    const display = document.getElementById("display");
+    const num = Number(display.value);
+
+    if (num < 0) {
+        display.value = "Error";
+        return;
+    }
+
+    display.value = Math.sqrt(num);
+}
