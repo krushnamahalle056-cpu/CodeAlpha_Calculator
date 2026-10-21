@@ -245,3 +245,11 @@ function squareRoot() {
 
     display.value = Math.sqrt(num);
 }
+
+
+function square() {
+    const display = document.getElementById("display");
+    const num = Number(display.value);
+
+    display.value = num * num;
+}
